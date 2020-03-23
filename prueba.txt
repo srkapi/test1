@@ -1,7 +1,4 @@
 hello world
-
 first line
-
-second line
-
+new change on task2
 third line
