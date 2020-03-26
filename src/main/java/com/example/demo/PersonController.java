@@ -5,9 +5,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 @RequestMapping("/person")
 public class PersonController {
+
+    private List<Person> personList = new ArrayList<>();
 
     @PostMapping
     public Person savePerson() { // recibir por parametro un objeto java  y devolver el mismo object
