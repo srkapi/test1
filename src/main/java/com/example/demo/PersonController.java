@@ -13,9 +13,11 @@ public class PersonController {
     private List<Person> personList = new ArrayList<>();
 
     @PostMapping
-    public Person savePerson(@RequestBody Person person) { // recibir por parametro un objeto java  y devolver el mismo object
+    public List<Person> savePerson(@RequestBody Person person) { // recibir por parametro un objeto java  y devolver el mismo object
+        personList.add(person);
 
-        return person;
+           return personList;
+
     }
 
 
