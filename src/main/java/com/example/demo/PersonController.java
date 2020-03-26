@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -12,6 +11,7 @@ public class PersonController {
 
     private List<Person> personList = new ArrayList<>();
 
+
     @PostMapping
     public List<Person> savePerson(@RequestBody Person person) { // recibir por parametro un objeto java  y devolver el mismo object
         personList.add(person);
@@ -22,9 +22,9 @@ public class PersonController {
 
 
     @GetMapping("/{id}")
-    public List<Person> getPerson(@PathVariable int id) {
-        personList.get(id);
-        return personList;
+    public Person getPerson(@PathVariable("id") int id) {
+
+        return personList.get(id);
     }
 
 }
