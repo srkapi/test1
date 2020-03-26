@@ -16,15 +16,15 @@ public class PersonController {
     public List<Person> savePerson(@RequestBody Person person) { // recibir por parametro un objeto java  y devolver el mismo object
         personList.add(person);
 
-           return personList;
+        return personList;
 
     }
 
 
-    @GetMapping
-    public Person getPerson(Person person) {
-
-        return person;
+    @GetMapping("/{id}")
+    public List<Person> getPerson(@PathVariable int id) {
+        personList.get(id);
+        return personList;
     }
 
 }
