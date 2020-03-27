@@ -10,6 +10,12 @@ import java.util.List;
 public class PersonController {
 
     private List<Person> personList = new ArrayList<>();
+    // cambiar list por map
+    // diferencias entre mapa y list
+    // diferencia entre lista y queue
+    // buscar composicion en java
+    // interface  en java?? concepto
+
 
 
     @PostMapping
