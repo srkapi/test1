@@ -32,6 +32,10 @@ public class PersonController {
         return personList.get(id);
     }
 
-    
+    @DeleteMapping("/{id}")
+    public List<Person> deletePerson(@PathVariable("id") int id){
+        personList.remove(id);
+        return personList;
+    }
 
 }
