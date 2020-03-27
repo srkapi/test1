@@ -28,8 +28,8 @@ public class PersonController {
 
     @PutMapping("/{id}")
     public Person updatePerson(@PathVariable("id") int id, @RequestBody Person person){
-        personList.set(id,person);
-        return personList.get(id);
+
+        return personList.set(id, person);
     }
 
     @DeleteMapping("/{id}")
