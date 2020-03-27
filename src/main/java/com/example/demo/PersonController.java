@@ -20,11 +20,18 @@ public class PersonController {
 
     }
 
-
     @GetMapping("/{id}")
     public Person getPerson(@PathVariable("id") int id) {
 
         return personList.get(id);
     }
+
+    @PutMapping("/{id}")
+    public Person updatePerson(@PathVariable("id") int id, @RequestBody Person person){
+        personList.set(id,person);
+        return personList.get(id);
+    }
+
+    
 
 }
