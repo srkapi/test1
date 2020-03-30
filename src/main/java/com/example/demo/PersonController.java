@@ -13,15 +13,20 @@ public class PersonController {
     // cambiar list por map
     //En java 8: Map<Integer,Person> mapa = personList.stream().collect(Collectors.toMap(x->x.getId(),x->x));
     // duda: si en una lista hay elementos repetidos, al convertirla a un mapa con cual elemento se queda?
+    //se machacan los repetidos quedandose solo con el ultimo
 
     // diferencias entre mapa y list
     /* mapa -> la interfaz map asocia claves a valores, siendo que para una clave
       solo hay un valor y las claves no pueden ser duplicadas. Map<clave, valor>
-      LAs implementaciones de los mapas son: HashMap, TreeMap y HashTable.
+      LAs implementaciones de los mapas son: HashMap, TreeMap y LinkedHashMap.
+        HashMap -> almacena las claves en una tabla sin ordenar
+        TreeMap -> almacena las claves ordenadas por su valor
+        LinkedHashMap -> almacena las claves según el orden de inserción
 
         list-> la interfaz list define varios elementos sucesivos, es decir, tienen una secuencia ordenada
         y admite elementos duplicados.  Se accede a los elementos por su posición en la lista.
         Sus implementaciones son: ArrrayList, Vector y LinkedList
+        En la LinkedList cada elemento tiene un puntero al anterior y al siguiente elemento.
       */
 
     // diferencia entre lista y queue
@@ -48,7 +53,7 @@ public class PersonController {
     * */
 
     // interface  en java?? concepto
-    /* El interface es una lista de métodos (acciones) que un objeto lleva a cabo.
+    /* El interface es una lista de acciones (métodos) que un objeto lleva a cabo.
         solo aparece la llamada al método no su código.
         una clase implementa una interfaz
      */
