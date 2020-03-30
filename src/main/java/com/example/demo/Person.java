@@ -4,9 +4,10 @@ package com.example.demo;
 import java.io.Serializable;
 
 public class Person implements Serializable {
-    private int id;
-    private String name;
-    private String surname;
+    //protected: accesible desde sus subclases y desde cualquier clase en el mismo package
+    protected int id;
+    protected String name;
+    protected String surname;
 
     public int getId() {
         return id;
