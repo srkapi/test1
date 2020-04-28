@@ -30,7 +30,7 @@ public class PersonajeControllerTests {
 
 
     @Test
-    public void probarGetPersonajeByMarca(){
+    public void probarGetPersonajeByMarca() throws Exception{
         Mockito.doReturn(personajeMock).when(personajeService).getPersonajeByMarca('E');
         ResponseEntity<Personaje> httpResponse = classTest.getPersonajeByMarca('E');
 
@@ -48,7 +48,7 @@ public class PersonajeControllerTests {
     }
 
     @Test
-    public void probarAddPersonaje(){
+    public void probarAddPersonaje() throws Exception{
         Mockito.doReturn(true).when(personajeService).addPersonaje(personajeMock);
         ResponseEntity<Void> httpResponse =  classTest.addPersonaje(personajeMock, builder);
 
