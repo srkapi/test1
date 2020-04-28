@@ -8,6 +8,5 @@ import java.util.List;
 @Repository
 public interface PersonajeRepository extends CrudRepository<Personaje, Character> {
     Personaje findByMarca(Character marca);
-    List findAll();
 
 }
