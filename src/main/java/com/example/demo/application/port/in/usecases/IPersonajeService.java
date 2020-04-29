@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.Personaje;
+import com.example.demo.application.domain.Personaje;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

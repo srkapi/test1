@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.Personaje;
+import com.example.demo.application.domain.Personaje;
 import com.example.demo.repository.PersonajeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

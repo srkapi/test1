@@ -1,6 +1,6 @@
 package com.example.demo.schedule;
 
-import com.example.demo.Personaje;
+import com.example.demo.application.domain.Personaje;
 import com.example.demo.service.IPersonajeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
