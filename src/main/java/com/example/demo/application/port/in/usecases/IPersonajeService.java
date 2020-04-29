@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.application.port.in.usecases;
 
 import com.example.demo.application.domain.Personaje;
 import org.springframework.stereotype.Service;

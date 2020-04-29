@@ -1,7 +1,8 @@
 package com.example.demo;
 
-import com.example.demo.controller.PersonajeController;
-import com.example.demo.service.IPersonajeService;
+import com.example.demo.adapter.in.web.PersonajeController;
+import com.example.demo.application.domain.Personaje;
+import com.example.demo.application.port.in.usecases.IPersonajeService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

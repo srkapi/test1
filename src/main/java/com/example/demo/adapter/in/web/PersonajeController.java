@@ -1,7 +1,7 @@
 package com.example.demo.adapter.in.web;
 
-import com.example.demo.Personaje;
-import com.example.demo.service.IPersonajeService;
+import com.example.demo.application.domain.Personaje;
+import com.example.demo.application.port.in.usecases.IPersonajeService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

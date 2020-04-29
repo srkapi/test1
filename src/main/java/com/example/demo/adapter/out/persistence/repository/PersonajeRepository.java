@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.example.demo.adapter.out.persistence.repository;
 
 import com.example.demo.application.domain.Personaje;
 import org.springframework.data.repository.CrudRepository;

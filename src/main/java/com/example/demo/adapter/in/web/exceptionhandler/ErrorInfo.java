@@ -1,4 +1,4 @@
-package com.example.demo.exception;
+package com.example.demo.adapter.in.web.exceptionhandler;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

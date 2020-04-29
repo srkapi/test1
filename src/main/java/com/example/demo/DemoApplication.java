@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import com.example.demo.schedule.PersonajeSchedule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;

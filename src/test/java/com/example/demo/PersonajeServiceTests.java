@@ -1,7 +1,8 @@
 package com.example.demo;
 
-import com.example.demo.repository.PersonajeRepository;
-import com.example.demo.service.PersonajeService;
+import com.example.demo.application.domain.Personaje;
+import com.example.demo.adapter.out.persistence.repository.PersonajeRepository;
+import com.example.demo.application.service.PersonajeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

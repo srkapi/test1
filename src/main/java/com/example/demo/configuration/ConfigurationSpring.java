@@ -1,8 +1,8 @@
 package com.example.demo.configuration;
 
 
-import com.example.demo.service.IPersonajeService;
-import com.example.demo.service.PersonajeService;
+import com.example.demo.application.port.in.usecases.IPersonajeService;
+import com.example.demo.application.service.PersonajeService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

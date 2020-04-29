@@ -1,26 +1,14 @@
-package com.example.demo;
+package com.example.demo.application.domain;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import java.io.Serializable;
 
-@Entity
-@Table(name="personajes")
-public class Personaje implements Serializable {
+public class Personaje {
 
-    @Id
-    @Column(name = "marca", nullable = false)
     private Character marca;
 
-    @Column(name = "nombre", nullable = false)
     private String nombre;
 
-    @Column(name = "turno", nullable = false)
     private Integer turno;
 
-    @Column(name = "salaSalida", nullable = false)
     private Integer salaSalida;
 
     public String getNombre() {

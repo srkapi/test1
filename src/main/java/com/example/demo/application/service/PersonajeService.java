@@ -1,7 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.application.service;
 
 import com.example.demo.application.domain.Personaje;
-import com.example.demo.repository.PersonajeRepository;
+import com.example.demo.adapter.out.persistence.repository.PersonajeRepository;
+import com.example.demo.application.port.in.usecases.IPersonajeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class PersonajeService implements IPersonajeService{
+public class PersonajeService implements IPersonajeService {
     @Autowired
     private PersonajeRepository personajeRepository;
 
