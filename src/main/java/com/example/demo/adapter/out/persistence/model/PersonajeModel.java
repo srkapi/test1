@@ -1,11 +1,17 @@
 package com.example.demo.adapter.out.persistence.model;
 
+import lombok.*;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Builder
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name="personajes")
 public class PersonajeModel {
 
