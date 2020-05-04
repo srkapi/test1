@@ -1,13 +1,8 @@
 package com.example.demo.adapter.in.web;
 
-import com.example.demo.application.domain.Personaje;
-import com.example.demo.application.port.in.usecases.IPersonajeService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 import org.apache.log4j.Logger;
 
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 @Component

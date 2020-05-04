@@ -130,3 +130,50 @@
 [2020-04-30 14:20:02] [ INFO ] [PersonajeController:28] en servicio CreatePersonajeCommand(marca=C, nombre=Cersei, turno=2, salaSalida=25)
 [2020-04-30 14:21:10] [ INFO ] [PersonajeController:23] personaje CreatePersonajeCommand(marca=C, nombre=Cersei, turno=2, salaSalida=25)
 [2020-04-30 14:21:10] [ INFO ] [PersonajeController:28] en servicio CreatePersonajeCommand(marca=C, nombre=Cersei, turno=2, salaSalida=25)
+[2020-05-04 16:59:51] [ INFO ] [PersonajeController:40] get all personaje 
+[2020-05-04 16:59:58] [ INFO ] [PersonajeController:40] get all personaje 
+[2020-05-04 17:27:13] [ INFO ] [PersonajeController:40] get all personaje 
+[2020-05-04 17:27:58] [ INFO ] [PersonajeController:40] get all personaje 
+[2020-05-04 17:29:30] [ INFO ] [PersonajeController:40] get all personaje 
+[2020-05-04 17:33:15] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:34:04] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:34:04] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:39:15] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:39:15] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:39:15] [ INFO ] [PersonajeController:31] find all in persistence
+[2020-05-04 17:40:11] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:40:11] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:40:11] [ INFO ] [PersonajeController:36] find all in persistence [PersonajeModel(id=1, marca=E, nombre=Eddard, turno=1, salaSalida=2), PersonajeModel(id=2, marca=A, nombre=Arya, turno=1, salaSalida=2)]
+[2020-05-04 17:41:59] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:41:59] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:42:54] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:42:54] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:42:55] [ INFO ] [PersonajeController:44] to domain list 
+[2020-05-04 17:43:52] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:43:52] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:43:52] [ INFO ] [PersonajeController:46] to domain list 
+[2020-05-04 17:44:39] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:44:39] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:45:44] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:45:44] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:45:44] [ INFO ] [PersonajeController:48] to domain list 
+[2020-05-04 17:46:52] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:46:52] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:46:53] [ INFO ] [PersonajeController:48] to domain list java.util.ArrayList$Itr@c1a5068
+[2020-05-04 17:48:19] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:48:19] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:48:20] [ INFO ] [PersonajeController:51] to domain list Eddard
+[2020-05-04 17:51:15] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:51:15] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:51:16] [ INFO ] [PersonajeController:51] to domain list Arya
+[2020-05-04 17:54:04] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:54:04] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:51] to domain list Cersei
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:58] to domain list [Personaje(id=null, marca=C, nombre=Cersei, turno=1, salaSalida=2)]
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:51] to domain list Arya
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:58] to domain list [Personaje(id=null, marca=C, nombre=Cersei, turno=1, salaSalida=2), Personaje(id=null, marca=A, nombre=Arya, turno=1, salaSalida=2)]
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:51] to domain list Eddard
+[2020-05-04 17:54:05] [ INFO ] [PersonajeController:58] to domain list [Personaje(id=null, marca=C, nombre=Cersei, turno=1, salaSalida=2), Personaje(id=null, marca=A, nombre=Arya, turno=1, salaSalida=2), Personaje(id=null, marca=E, nombre=Eddard, turno=1, salaSalida=2)]
+[2020-05-04 17:56:23] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-04 17:56:23] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-04 17:56:23] [ INFO ] [PersonajeController:41] lista [ResponseFindAllPersonajes(marca=E, nombre=Eddard, turno=1, salaSalida=2), ResponseFindAllPersonajes(marca=A, nombre=Arya, turno=1, salaSalida=2), ResponseFindAllPersonajes(marca=C, nombre=Cersei, turno=1, salaSalida=2)]

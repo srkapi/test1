@@ -26,8 +26,8 @@ public class CreatePersonajeService implements CreatePersonajeUseCases {
     @Override
     public ResponseCreatePersonaje addPersonaje(CreatePersonajeCommand createPersonajeCommand){
        // logger.info("en servicio "+createPersonajeCommand);
-        Personaje personaje = mapperDomain.toDomain(createPersonajeCommand);
-        Personaje responsePersistence = this.persistencePersonajePort.save(personaje);
-        return this.mapperDomain.toResponse(responsePersistence);
+        Personaje personajeDomain = mapperDomain.toDomain(createPersonajeCommand);
+        Personaje personaje = this.persistencePersonajePort.save(personajeDomain);
+        return this.mapperDomain.toResponse(personaje);
     }
 }
