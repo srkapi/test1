@@ -1,21 +1,25 @@
 package com.example.demo.adapter.out.persistence.model;
 
 import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
+/**
+ * Modelo de BBDD
+ * */
 @Entity
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name="personajes")
-public class PersonajeModel {
+public class PersonajeModel { //Modelo de BBDD
 
     @Id
+    @GeneratedValue
+    private Long id;
+
     @Column(name = "marca", nullable = false)
     private Character marca;
 

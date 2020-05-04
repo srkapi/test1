@@ -1,14 +1,16 @@
-package com.example.demo.application.domain;
+package com.example.demo.application.port.in.model;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 
+import java.io.Serializable;
+
+/**
+ * modelo de response
+ * */
 @Builder
 @Data
-public class Personaje {
-    private Long id;
+public class ResponseCreatePersonaje implements Serializable {
     private Character marca;
 
     private String nombre;
@@ -16,5 +18,4 @@ public class Personaje {
     private Integer turno;
 
     private Integer salaSalida;
-
 }

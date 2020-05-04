@@ -7,7 +7,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 
 @SpringBootApplication
-@EnableJpaRepositories("com.example.demo.repository")
 @EnableScheduling //habilita el soporte de scheduling y permite usar la notación @scheduled en el conexto de la app
 public class DemoApplication {
 
