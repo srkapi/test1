@@ -13,6 +13,7 @@ import java.io.Serializable;
 @Data
 public class CreatePersonajeCommand implements Serializable {
 
+    private Long id;
     private Character marca;
 
     private String nombre;

@@ -6,7 +6,6 @@ import com.example.demo.application.port.in.model.ResponseCreatePersonaje;
 import com.example.demo.application.port.in.model.ResponseFindAllPersonajes;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
