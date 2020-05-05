@@ -42,9 +42,9 @@ public class PersonajeController {
     }
 
     @GetMapping
-    public ResponseEntity<Iterable<ResponseFindAllPersonajes>> getAllPersonajes() {
-        Iterable<ResponseFindAllPersonajes> list = this.findAllPersonajesUseCases.getAllPersonajes();
-        return new ResponseEntity<Iterable<ResponseFindAllPersonajes>>(list, OK);
+    public ResponseEntity<ResponseFindAllPersonajes> getAllPersonajes() {
+        ResponseFindAllPersonajes list = this.findAllPersonajesUseCases.getAllPersonajes();
+        return new ResponseEntity<ResponseFindAllPersonajes>(list, OK);
     }
 
     @DeleteMapping("/{marca}")

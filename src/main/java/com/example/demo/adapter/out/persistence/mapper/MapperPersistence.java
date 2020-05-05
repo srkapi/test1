@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -37,12 +38,13 @@ public class MapperPersistence {
     }
 
 
-    public Iterable<Personaje> toDomainList(Iterable<PersonajeModel> modelList) {
+    public List<Personaje> toDomainList(List<PersonajeModel> modelList) {
 
-        ArrayList<Personaje> personajes = new ArrayList<>();
+        List<Personaje> personajes = new ArrayList<>();
 
         for (PersonajeModel model : modelList) {
             personajes.add(Personaje.builder()
+                    .id(model.getId())
                     .marca(model.getMarca())
                     .nombre(model.getNombre())
                     .turno(model.getTurno())

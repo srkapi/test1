@@ -1,19 +1,21 @@
 package com.example.demo.adapter.out.persistence.model;
 
-import lombok.*;
-import org.hibernate.annotations.GenericGenerator;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 /**
  * Modelo de BBDD
- * */
+ */
 @Entity
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name="personajes")
+@Table(name = "personajes")
 public class PersonajeModel { //Modelo de BBDD
 
     @Id
