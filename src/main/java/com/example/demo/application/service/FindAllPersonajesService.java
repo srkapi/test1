@@ -19,12 +19,10 @@ public class FindAllPersonajesService implements FindAllPersonajesUseCases {
     private final MapperDomain mapperDomain;
 
     @Override
-    public Iterable<ResponseFindAllPersonajes> getAllPersonajes(){
-        logger.info("get all personajes in service");
+    public Iterable<ResponseFindAllPersonajes> getAllPersonajes() {
+        //logger.info("get all personajes in service");
         Iterable<Personaje> personaje = this.findAllPersonajesPort.findAllPersonajes();
-        /**
-         * HACER OTRO METODO EN EL MAPPER DOMAIN PARA QUE DEVUELVA UNA LISTA DEL MODELO RESPONSE??
-         * */
+
         return this.mapperDomain.toResponseList(personaje);
     }
 }

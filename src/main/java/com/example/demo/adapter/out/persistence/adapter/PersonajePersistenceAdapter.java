@@ -5,6 +5,7 @@ import com.example.demo.adapter.out.persistence.mapper.MapperPersistence;
 import com.example.demo.adapter.out.persistence.model.PersonajeModel;
 import com.example.demo.adapter.out.persistence.repository.PersonajeRepository;
 import com.example.demo.application.domain.Personaje;
+import com.example.demo.application.port.out.DeletePersonajePort;
 import com.example.demo.application.port.out.FindAllPersonajesPort;
 import com.example.demo.application.port.out.PersistencePersonajePort;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
-public class PersonajePersistenceAdapter implements PersistencePersonajePort, FindAllPersonajesPort {
+public class PersonajePersistenceAdapter implements PersistencePersonajePort, FindAllPersonajesPort, DeletePersonajePort {
         final static Logger logger = Logger.getLogger(PersonajeController.class);
 
         private final PersonajeRepository personajeRepository;
@@ -30,11 +31,13 @@ public class PersonajePersistenceAdapter implements PersistencePersonajePort, Fi
         public Iterable<Personaje> findAllPersonajes(){
 
                 Iterable<PersonajeModel> list = this.personajeRepository.findAll();
-                /**
-                 * HACER OTRO METODO EN EL MAPPER PERSISTANCE PARA QUE DEVUELVA UNA LISTA DEL MODELO DE DOMINIO??
-                 * */
-                //logger.info("find all in persistence "+list);
+
                 return this.mapperPersistence.toDomainList(list);
+        }
+
+        @Override
+        public void deletePersonaje(Character marca){
+                this.personajeRepository.delete(personajeRepository.findByMarca(marca));
         }
 
 }

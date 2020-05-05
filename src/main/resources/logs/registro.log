@@ -177,3 +177,6 @@
 [2020-05-04 17:56:23] [ INFO ] [PersonajeController:39] get all personaje 
 [2020-05-04 17:56:23] [ INFO ] [PersonajeController:23] get all personajes in service
 [2020-05-04 17:56:23] [ INFO ] [PersonajeController:41] lista [ResponseFindAllPersonajes(marca=E, nombre=Eddard, turno=1, salaSalida=2), ResponseFindAllPersonajes(marca=A, nombre=Arya, turno=1, salaSalida=2), ResponseFindAllPersonajes(marca=C, nombre=Cersei, turno=1, salaSalida=2)]
+[2020-05-05 08:14:51] [ INFO ] [PersonajeController:39] get all personaje 
+[2020-05-05 08:14:51] [ INFO ] [PersonajeController:23] get all personajes in service
+[2020-05-05 08:14:51] [ INFO ] [PersonajeController:41] lista []
