@@ -13,38 +13,40 @@ import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 @RequiredArgsConstructor
 public class PersonajePersistenceAdapter implements PersistencePersonajePort, FindAllPersonajesPort, DeletePersonajePort, FindByMarcaPersonajePort {
-        final static Logger logger = Logger.getLogger(PersonajeController.class);
+    final static Logger logger = Logger.getLogger(PersonajeController.class);
 
-        private final PersonajeRepository personajeRepository;
-        private final MapperPersistence mapperPersistence;
+    private final PersonajeRepository personajeRepository;
+    private final MapperPersistence mapperPersistence;
 
-        @Override
-        public Personaje findByMarca(Character marca){
-                PersonajeModel personajeModel = this.personajeRepository.findByMarca(marca);
-                return this.mapperPersistence.toDomain(personajeModel);
-        }
+    @Override
+    public Personaje findByMarca(Character marca) {
+        PersonajeModel personajeModel = this.personajeRepository.findByMarca(marca);
+        return this.mapperPersistence.toDomain(personajeModel);
+    }
 
-        @Override
-        public Personaje save(Personaje personaje){
-                PersonajeModel personajeModel =this.mapperPersistence.toModelPersistence(personaje);
-                PersonajeModel savedPersonaje = this.personajeRepository.save(personajeModel);
-                return this.mapperPersistence.toDomain(savedPersonaje);
-        }
+    @Override
+    public Personaje save(Personaje personaje) {
+        PersonajeModel personajeModel = this.mapperPersistence.toModelPersistence(personaje);
+        PersonajeModel savedPersonaje = this.personajeRepository.save(personajeModel);
+        return this.mapperPersistence.toDomain(savedPersonaje);
+    }
 
-        @Override
-        public Iterable<Personaje> findAllPersonajes(){
+    @Override
+    public List<Personaje> findAllPersonajes() {
 
-                Iterable<PersonajeModel> list = this.personajeRepository.findAll();
+        List<PersonajeModel> list = this.personajeRepository.findAll();
 
-                return this.mapperPersistence.toDomainList(list);
-        }
+        return this.mapperPersistence.toDomainList(list);
+    }
 
-        @Override
-        public void deletePersonaje(Character marca){
-                this.personajeRepository.delete(personajeRepository.findByMarca(marca));
-        }
+    @Override
+    public void deletePersonaje(Character marca) {
+        this.personajeRepository.delete(personajeRepository.findByMarca(marca));
+    }
 
 }

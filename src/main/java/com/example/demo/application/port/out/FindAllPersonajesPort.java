@@ -9,5 +9,5 @@ import java.util.List;
  * Interfaz de acceso a persistencia
  * */
 public interface FindAllPersonajesPort {
-    Iterable<Personaje> findAllPersonajes();
+    List<Personaje> findAllPersonajes();
 }

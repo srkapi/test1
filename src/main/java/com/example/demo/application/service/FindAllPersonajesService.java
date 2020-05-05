@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class FindAllPersonajesService implements FindAllPersonajesUseCases {
@@ -19,9 +21,9 @@ public class FindAllPersonajesService implements FindAllPersonajesUseCases {
     private final MapperDomain mapperDomain;
 
     @Override
-    public Iterable<ResponseFindAllPersonajes> getAllPersonajes() {
+    public ResponseFindAllPersonajes getAllPersonajes() {
         //logger.info("get all personajes in service");
-        Iterable<Personaje> personaje = this.findAllPersonajesPort.findAllPersonajes();
+        List<Personaje> personaje = this.findAllPersonajesPort.findAllPersonajes();
 
         return this.mapperDomain.toResponseList(personaje);
     }
