@@ -33,16 +33,6 @@ public class MapperDomain {
     }
 
     public ResponseFindAllPersonajes toResponseList(List<Personaje> personaje) {
-        //List<ResponseFindAllPersonajes> personajesResponse = new ArrayList<>();
         return ResponseFindAllPersonajes.builder().responsePersonajeList(personaje).build();
-        /*for (Personaje p : personaje) {
-            personajesResponse.add(ResponseFindAllPersonajes.builder()
-                    .marca(p.getMarca())
-                    .nombre(p.getNombre())
-                    .turno(p.getTurno())
-                    .salaSalida(p.getSalaSalida())
-                    .build());
-        }*/
-       // return personajesResponse;
     }
 }
