@@ -1,6 +1,5 @@
 package com.example.demo.adapter.out.persistence.model;
 
-import com.example.demo.application.domain.Personaje;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,9 +20,11 @@ public class KeyModel {
     @Id
     @GeneratedValue
     private Long code;
-    @Column(name="name", nullable = false)
+
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(optional =false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_personaje", nullable = false)
     private PersonajeModel personajeModel;
 }

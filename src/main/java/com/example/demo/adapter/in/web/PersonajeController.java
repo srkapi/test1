@@ -9,8 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import static org.springframework.http.HttpStatus.NO_CONTENT;
-import static org.springframework.http.HttpStatus.OK;
+import static org.springframework.http.HttpStatus.*;
 
 
 @RestController
@@ -28,7 +27,10 @@ public class PersonajeController {
     @GetMapping("/{marca}")
     public ResponseEntity<ResponseCreatePersonaje> getByMarca(@PathVariable("marca") Character marca) {
         ResponseCreatePersonaje result = this.findByMarcaPersonajeUseCases.getByMarca(marca);
-        return new ResponseEntity<ResponseCreatePersonaje>(result, OK);
+        if(marca!=null)
+            return new ResponseEntity<ResponseCreatePersonaje>(result, OK);
+        else
+            return new ResponseEntity<ResponseCreatePersonaje>(result, NOT_FOUND);
     }
 
     @PostMapping

@@ -181,3 +181,13 @@
 [2020-05-05 08:14:51] [ INFO ] [PersonajeController:23] get all personajes in service
 [2020-05-05 08:14:51] [ INFO ] [PersonajeController:41] lista []
 [2020-05-05 14:01:13] [ INFO ] [PersonajeController:56] update personaje 2
+[2020-05-06 09:32:08] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave1, personajeModel=null)
+[2020-05-06 09:32:08] [ INFO ] [PersonajeController:26] fk personaje null
+[2020-05-06 09:38:43] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave1, personajeModel=PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null))
+[2020-05-06 09:38:43] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null)
+[2020-05-06 09:39:53] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave2, personajeModel=PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null))
+[2020-05-06 09:39:53] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null)
+[2020-05-06 09:39:58] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave3, personajeModel=PersonajeModel(id=2, marca=null, nombre=null, turno=null, salaSalida=null))
+[2020-05-06 09:39:58] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=2, marca=null, nombre=null, turno=null, salaSalida=null)
+[2020-05-06 09:45:57] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave4, personajeModel=PersonajeModel(id=4, marca=null, nombre=null, turno=null, salaSalida=null))
+[2020-05-06 09:45:57] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=4, marca=null, nombre=null, turno=null, salaSalida=null)

@@ -10,13 +10,7 @@ import java.util.List;
 @Builder
 @Data
 public class ResponseFindAllPersonajes implements Serializable {
-    /*private Character marca;
 
-    private String nombre;
-
-    private Integer turno;
-
-    private Integer salaSalida;*/
    private List<Personaje> responsePersonajeList;
 
 }
