@@ -24,7 +24,7 @@ public class KeyModel {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @ManyToOne(optional =false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @ManyToOne(optional =false, cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_personaje", nullable = false)
     private PersonajeModel personajeModel;
 }

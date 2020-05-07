@@ -23,11 +23,21 @@ public class PersonajeController {
     private final DeletePersonajeUseCases deletePersonajeUseCases;
     private final FindByMarcaPersonajeUseCases findByMarcaPersonajeUseCases;
     private final UpdatePersonajeUseCases updatePersonajeUseCases;
+    private final FindByIdPersonajeUseCases findByIdPersonajeUseCases;
 
     @GetMapping("/{marca}")
     public ResponseEntity<ResponseCreatePersonaje> getByMarca(@PathVariable("marca") Character marca) {
         ResponseCreatePersonaje result = this.findByMarcaPersonajeUseCases.getByMarca(marca);
         if(marca!=null)
+            return new ResponseEntity<ResponseCreatePersonaje>(result, OK);
+        else
+            return new ResponseEntity<ResponseCreatePersonaje>(result, NOT_FOUND);
+    }
+
+    @GetMapping("/id/{id}")
+    public ResponseEntity<ResponseCreatePersonaje> getById(@PathVariable("id") Long id) {
+        ResponseCreatePersonaje result = this.findByIdPersonajeUseCases.getById(id);
+        if(id!=null)
             return new ResponseEntity<ResponseCreatePersonaje>(result, OK);
         else
             return new ResponseEntity<ResponseCreatePersonaje>(result, NOT_FOUND);

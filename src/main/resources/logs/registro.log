@@ -191,3 +191,5 @@
 [2020-05-06 09:39:58] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=2, marca=null, nombre=null, turno=null, salaSalida=null)
 [2020-05-06 09:45:57] [ INFO ] [PersonajeController:24] key Key(code=null, name=llave4, personajeModel=PersonajeModel(id=4, marca=null, nombre=null, turno=null, salaSalida=null))
 [2020-05-06 09:45:57] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=4, marca=null, nombre=null, turno=null, salaSalida=null)
+[2020-05-06 14:02:03] [ INFO ] [PersonajeController:25] id personaje PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null, keys=null)
+[2020-05-06 14:02:13] [ INFO ] [PersonajeController:25] id personaje PersonajeModel(id=2, marca=null, nombre=null, turno=null, salaSalida=null, keys=null)

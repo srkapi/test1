@@ -18,4 +18,5 @@ public interface PersonajeRepository extends CrudRepository<PersonajeModel, Long
     @Override
     List<PersonajeModel> findAll();
 
+
 }

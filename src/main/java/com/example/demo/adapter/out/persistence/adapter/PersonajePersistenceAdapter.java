@@ -11,11 +11,12 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
 public class PersonajePersistenceAdapter implements PersistencePersonajePort, FindAllPersonajesPort, DeletePersonajePort,
-        FindByMarcaPersonajePort, UpdatePersonajePort {
+        FindByMarcaPersonajePort, UpdatePersonajePort, FindByIdPersonajePort {
     final static Logger logger = Logger.getLogger(PersonajeController.class);
 
     private final PersonajeRepository personajeRepository;
@@ -24,6 +25,13 @@ public class PersonajePersistenceAdapter implements PersistencePersonajePort, Fi
     @Override
     public Personaje findByMarca(Character marca) {
         PersonajeModel personajeModel = this.personajeRepository.findByMarca(marca);
+        return this.mapperPersistence.toDomain(personajeModel);
+    }
+
+    @Override
+    public Personaje findById(Long id) {
+        Optional<PersonajeModel> personaje = this.personajeRepository.findById(id);
+        PersonajeModel personajeModel = personaje.get();
         return this.mapperPersistence.toDomain(personajeModel);
     }
 
@@ -48,7 +56,7 @@ public class PersonajePersistenceAdapter implements PersistencePersonajePort, Fi
     }
 
     @Override
-    public Personaje update(Personaje personaje, Long id){
+    public Personaje update(Personaje personaje, Long id) {
         PersonajeModel personajeModel = this.mapperPersistence.toModelPersistence(personaje);
         personajeModel.setId(id);
         PersonajeModel savedPersonaje = this.personajeRepository.save(personajeModel);

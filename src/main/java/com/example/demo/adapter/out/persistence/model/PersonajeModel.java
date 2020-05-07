@@ -1,11 +1,13 @@
 package com.example.demo.adapter.out.persistence.model;
 
+import com.example.demo.application.domain.Key;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Modelo de BBDD
@@ -33,4 +35,7 @@ public class PersonajeModel { //Modelo de BBDD
 
     @Column(name = "salaSalida", nullable = false)
     private Integer salaSalida;
+
+    /*@OneToMany(mappedBy = "personajeModel")
+    private List<KeyModel> keys;*/
 }
