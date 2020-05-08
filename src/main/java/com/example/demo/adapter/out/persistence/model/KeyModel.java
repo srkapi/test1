@@ -18,13 +18,13 @@ import javax.persistence.*;
 @Table(name = "llaves")
 public class KeyModel {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long code;
 
     @Column(name = "name", nullable = false)
     private String name;
 
-    @ManyToOne(optional =false, cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
-    @JoinColumn(name = "id_personaje", nullable = false)
+    @ManyToOne( cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_personaje")
     private PersonajeModel personajeModel;
 }
