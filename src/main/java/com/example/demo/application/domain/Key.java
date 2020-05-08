@@ -9,5 +9,5 @@ import lombok.Data;
 public class Key {
     private Long code;
     private String name;
-    private PersonajeModel personajeModel;
+    private Personaje personaje;
 }

@@ -11,6 +11,6 @@ import java.util.List;
 @Data
 public class ResponseFindAllPersonajes implements Serializable {
 
-   private List<Personaje> responsePersonajeList;
+    private List<Personaje> responsePersonajeList;
 
 }

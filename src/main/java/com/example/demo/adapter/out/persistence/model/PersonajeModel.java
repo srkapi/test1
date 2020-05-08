@@ -1,6 +1,5 @@
 package com.example.demo.adapter.out.persistence.model;
 
-import com.example.demo.application.domain.Key;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,7 +20,7 @@ import java.util.List;
 public class PersonajeModel { //Modelo de BBDD
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "marca", nullable = false)
@@ -36,6 +35,6 @@ public class PersonajeModel { //Modelo de BBDD
     @Column(name = "salaSalida", nullable = false)
     private Integer salaSalida;
 
-    /*@OneToMany(mappedBy = "personajeModel")
-    private List<KeyModel> keys;*/
+    @OneToMany(mappedBy = "personajeModel")
+    private List<KeyModel> keyList;
 }

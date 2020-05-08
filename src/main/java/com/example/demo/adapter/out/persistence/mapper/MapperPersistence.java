@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -49,6 +50,7 @@ public class MapperPersistence {
                     .nombre(model.getNombre())
                     .turno(model.getTurno())
                     .salaSalida(model.getSalaSalida())
+                    .keyList(Arrays.asList())
                     .build());
         }
 

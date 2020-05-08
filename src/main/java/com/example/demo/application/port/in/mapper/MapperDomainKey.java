@@ -12,14 +12,14 @@ import java.util.List;
 public class MapperDomainKey {
     public Key toDomain(CreateKeyCommand createKeyCommand) {
         return Key.builder().name(createKeyCommand.getName())
-                .personajeModel(createKeyCommand.getPersonajeModel())
+                .personaje(createKeyCommand.getPersonaje())
                 .build();
     }
 
     public ResponseCreateKey toResponse(Key key) {
         return ResponseCreateKey.builder()
                 .name(key.getName())
-                .personajeModel(key.getPersonajeModel())
+                .personaje(key.getPersonaje())
                 .build();
     }
 
