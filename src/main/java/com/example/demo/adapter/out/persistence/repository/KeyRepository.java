@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface KeyRepository extends CrudRepository<KeyModel, Long> {
 
-    @Query(value = "select k.code,k.name,k.id_personaje from llaves k  where k.id_personaje = :idP", nativeQuery = true)
+    @Query(value = "select llaves.code,llaves.name,llaves.id_personaje,personajes.nombre from llaves inner join  personajes on llaves.id_personaje =personajes.id and personajes.id= :idP", nativeQuery = true)
     List<KeyModel> findKeyByIdPersonaje(@Param("idP") Long id);
 }
