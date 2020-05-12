@@ -8,7 +8,9 @@ import com.example.demo.application.port.in.usecases.FindAllPersonajesUseCases;
 import com.example.demo.application.port.out.FindAllPersonajesPort;
 import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,6 +23,8 @@ public class FindAllPersonajesService implements FindAllPersonajesUseCases {
     private final MapperDomain mapperDomain;
 
     @Override
+    @Transactional(readOnly = true)
+    @PreAuthorize("hasRole('PERSONAJE_READER')")
     public ResponseFindAllPersonajes getAllPersonajes() {
         //logger.info("get all personajes in service");
         List<Personaje> personaje = this.findAllPersonajesPort.findAllPersonajes();

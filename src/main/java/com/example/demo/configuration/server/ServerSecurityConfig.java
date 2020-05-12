@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-@Order(SecurityProperties.BASIC_AUTH_ORDER) //Order applied to the WebSecurityConfigurerAdapter that is used to configure basic authentication for application endpoints
+//@Order(SecurityProperties.BASIC_AUTH_ORDER) //Order applied to the WebSecurityConfigurerAdapter that is used to configure basic authentication for application endpoints
 @Import(Encoders.class)
 public class ServerSecurityConfig  extends WebSecurityConfigurerAdapter {
     @Autowired

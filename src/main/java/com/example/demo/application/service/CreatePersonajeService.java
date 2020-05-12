@@ -10,7 +10,9 @@ import com.example.demo.application.port.in.usecases.CreatePersonajeUseCases;
 import com.example.demo.application.port.out.PersistencePersonajePort;
 import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -24,6 +26,8 @@ public class CreatePersonajeService implements CreatePersonajeUseCases {
     private final MapperDomain mapperDomain;
 
     @Override
+    @Transactional
+    @PreAuthorize("hasAuthority('PERSONAJE_CREATE')")
     public ResponseCreatePersonaje addPersonaje(CreatePersonajeCommand createPersonajeCommand){
        // logger.info("en servicio "+createPersonajeCommand);
         Personaje personajeDomain = mapperDomain.toDomain(createPersonajeCommand);
