@@ -42,9 +42,9 @@ public class DemoApplication implements CommandLineRunner {
         authorityRepository.save(personajeRead);
 
         User admin = new User();
-        int idAdmin = 1;
-        Long idAdminToLong = Long.valueOf(idAdmin);
-        admin.setId(idAdminToLong);
+        int idUser = 1;
+        Long idUserToLong = Long.valueOf(idUser);
+        admin.setId(idUserToLong);
         admin.setUsername("admin");
         admin.setPassword("$2a$08$qvrzQZ7jJ7oy2p/msL4M0.l83Cd0jNsX6AJUitbgRXGzge4j035ha"); //password BCrypt from admin1234
         admin.setAccountExpired(false);

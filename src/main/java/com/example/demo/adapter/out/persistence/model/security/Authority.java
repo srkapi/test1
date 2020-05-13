@@ -13,7 +13,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
-public class Authority implements GrantedAuthority {
+public class Authority implements GrantedAuthority, Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
