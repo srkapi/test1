@@ -23,8 +23,8 @@ public class FindAllPersonajesService implements FindAllPersonajesUseCases {
     private final MapperDomain mapperDomain;
 
     @Override
-    @Transactional(readOnly = true)
-    @PreAuthorize("hasRole('PERSONAJE_READER')")
+    @Transactional(readOnly = true) //el readonly dependerá de la bbdd
+    @PreAuthorize("hasAuthority('PERSONAJE_READ')")
     public ResponseFindAllPersonajes getAllPersonajes() {
         //logger.info("get all personajes in service");
         List<Personaje> personaje = this.findAllPersonajesPort.findAllPersonajes();

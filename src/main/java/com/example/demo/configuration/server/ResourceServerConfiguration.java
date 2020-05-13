@@ -10,13 +10,10 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Res
 @Configuration
 @EnableResourceServer
 public class ResourceServerConfiguration extends ResourceServerConfigurerAdapter {
-    //public class ResourceServerConfiguration extends WebSecurityConfigurerAdapter {
     private static final String RESOURCE_ID = "resource-server-rest-api";
-    // private static final String SECURED_READ_SCOPE = "hasAuthority('read')";
-    // private static final String SECURED_WRITE_SCOPE = "hasAuthority('write')";
     private static final String SECURED_READ_SCOPE = "#oauth2.hasScope('read')";
     private static final String SECURED_WRITE_SCOPE = "#oauth2.hasScope('write')";
-    private static final String SECURED_PATTERN = "/personaje/**";
+    private static final String SECURED_PATTERN = "/secured/**";
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) {

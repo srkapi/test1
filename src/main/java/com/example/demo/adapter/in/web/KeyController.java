@@ -14,7 +14,7 @@ import static org.springframework.http.HttpStatus.OK;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/key")
+@RequestMapping("/secured/key")
 public class KeyController {
     final static Logger logger = Logger.getLogger(KeyController.class);
     private final CreateKeyUseCases createKeyUseCases;

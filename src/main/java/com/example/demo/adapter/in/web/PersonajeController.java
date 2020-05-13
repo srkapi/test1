@@ -14,7 +14,7 @@ import static org.springframework.http.HttpStatus.*;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/personaje")
+@RequestMapping("/secured/personaje")
 public class PersonajeController {
     final static Logger logger = Logger.getLogger(PersonajeController.class);
 

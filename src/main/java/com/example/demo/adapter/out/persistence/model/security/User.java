@@ -8,7 +8,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 
 @Entity
 @Table(name = "USER_", uniqueConstraints = { @UniqueConstraint(columnNames = { "USER_NAME" }) })
@@ -58,6 +60,13 @@ public class User implements UserDetails, Serializable {
     @Override
     public boolean isCredentialsNonExpired() {
         return !isCredentialsExpired();
+    }
+
+    public void addAuthority(Authority authority){
+        if(this.authorities == null){
+            this.authorities = new ArrayList();
+        }
+        this.authorities.add(authority);
     }
 
 }
