@@ -41,19 +41,33 @@ public class DemoApplication implements CommandLineRunner {
         personajeRead.setName("PERSONAJE_READ");
         authorityRepository.save(personajeRead);
 
-        User admin = new User();
-        int idUser = 1;
-        Long idUserToLong = Long.valueOf(idUser);
-        admin.setId(idUserToLong);
-        admin.setUsername("admin");
-        admin.setPassword("$2a$08$qvrzQZ7jJ7oy2p/msL4M0.l83Cd0jNsX6AJUitbgRXGzge4j035ha"); //password BCrypt from admin1234
-        admin.setAccountExpired(false);
-        admin.setAccountLocked(false);
-        admin.setCredentialsExpired(false);
-        admin.setEnabled(true);
-        admin.addAuthority(personajeCreate);
-        admin.addAuthority(personajeRead);
-        userRepository.save(admin);
+        Authority personajeUpdate = new Authority();
+        idAuthority = 3;
+        idAuthorityToLong = Long.valueOf(idAuthority);
+        personajeUpdate.setId(idAuthorityToLong);
+        personajeUpdate.setName("PERSONAJE_UPDATE");
+        authorityRepository.save(personajeUpdate);
+
+        Authority personajeDelete = new Authority();
+        idAuthority = 4;
+        idAuthorityToLong = Long.valueOf(idAuthority);
+        personajeDelete.setId(idAuthorityToLong);
+        personajeDelete.setName("PERSONAJE_DELETE");
+        authorityRepository.save(personajeDelete);
+
+        Authority keyCreate = new Authority();
+        idAuthority = 5;
+        idAuthorityToLong = Long.valueOf(idAuthority);
+        keyCreate.setId(idAuthorityToLong);
+        keyCreate.setName("KEY_CREATE");
+        authorityRepository.save(keyCreate);
+
+        Authority keyRead = new Authority();
+        idAuthority = 6;
+        idAuthorityToLong = Long.valueOf(idAuthority);
+        keyRead.setId(idAuthorityToLong);
+        keyRead.setName("KEY_READ");
+        authorityRepository.save(keyRead);
 
     }
 }

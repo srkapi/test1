@@ -193,3 +193,60 @@
 [2020-05-06 09:45:57] [ INFO ] [PersonajeController:26] fk personaje PersonajeModel(id=4, marca=null, nombre=null, turno=null, salaSalida=null)
 [2020-05-06 14:02:03] [ INFO ] [PersonajeController:25] id personaje PersonajeModel(id=1, marca=null, nombre=null, turno=null, salaSalida=null, keys=null)
 [2020-05-06 14:02:13] [ INFO ] [PersonajeController:25] id personaje PersonajeModel(id=2, marca=null, nombre=null, turno=null, salaSalida=null, keys=null)
+[2020-05-13 14:44:21] [ INFO ] [UserPersistenceAdapter:28] en resorce server
+[2020-05-13 17:59:53] [ INFO ] [UserController:24] user controller
+[2020-05-13 18:02:00] [ INFO ] [UserController:24] user controller
+[2020-05-13 18:07:30] [ INFO ] [UserController:24] user controller
+[2020-05-13 18:09:21] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:10:44] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:10:44] [ INFO ] [MapperDomainUser:30] en mapper domain to domain
+[2020-05-13 18:12:05] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:12:55] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:12:56] [ INFO ] [MapperDomainUser:32] en mapper domain to domain $2a$10$lLYi0t9L4eCB5iIk1sBNCufsnUIYMOvmWCxg41ar9cS/DHsaitlmW
+[2020-05-13 18:14:17] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:14:17] [ INFO ] [MapperDomainUser:32] en mapper domain to domain $2a$10$jFJfpJoCsC0XJ2jJdHX5feQ4uTZnEcTKZuRjn0iI6cSKI88O7ayqC
+[2020-05-13 18:14:17] [ INFO ] [MapperDomainUser:34] en mapper domain to domain Optional[com.example.demo.adapter.out.persistence.model.security.Authority@3c]
+[2020-05-13 18:47:23] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 18:47:23] [ INFO ] [MapperDomainUser:35] en mapper domain to domain $2a$10$jVDvtmUxQTfjd/OD.PE5Xua4SLARBU2/kQkYpCLt1rYC2PaWP52Cy
+[2020-05-13 18:47:23] [ INFO ] [MapperDomainUser:37] en mapper domain to domain com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-13 18:47:23] [ INFO ] [MapperDomainUser:46] en mapper domain to response
+[2020-05-13 19:07:16] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-13 19:07:17] [ INFO ] [MapperDomainUser:35] en mapper domain to domain $2a$10$/qtDwO6P0E3wi8o5pMyXL.PxTiB53YWg.RB2nsCAQt6u24cdHQhce
+[2020-05-13 19:07:17] [ INFO ] [MapperDomainUser:37] en mapper domain to domain com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-13 19:07:17] [ INFO ] [MapperDomainUser:47] en mapper domain to response []
+[2020-05-14 08:58:21] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin2, password=admin1234, rol=1)
+[2020-05-14 08:58:22] [ INFO ] [MapperDomainUser:35] en mapper domain to domain $2a$10$u5fiIAqwrArpjWFdUrIw2.5a4wPeBUQyDmihTD3dZGZN9Uht.8Xmy
+[2020-05-14 08:58:22] [ INFO ] [MapperDomainUser:37] en mapper domain to domain com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 08:58:22] [ INFO ] [MapperDomainUser:47] en mapper domain to response []
+[2020-05-14 09:12:07] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin3, password=admin1234, rol=1)
+[2020-05-14 09:12:07] [ INFO ] [MapperDomainUser:35] en mapper domain to domain $2a$10$g/iht8QIdBDLvNl4UJtvauN.nOIzeOKxmTrsGL/bmitJz1/GtrAG2
+[2020-05-14 09:12:07] [ INFO ] [MapperDomainUser:37] en mapper domain to domain com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 09:12:07] [ INFO ] [MapperDomainUser:47] en mapper domain to response []
+[2020-05-14 09:24:37] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(name=admin3, password=admin1234, rol=1)
+[2020-05-14 09:24:38] [ INFO ] [MapperPersistenceUser:31] en mapper persistence user tomodelpersistence 
+[2020-05-14 09:24:38] [ INFO ] [MapperPersistenceUser:40] en mapper persistence user todomain 
+[2020-05-14 09:35:15] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=null, password=admin1234, rol=1, enabled=null)
+[2020-05-14 09:35:15] [ INFO ] [MapperPersistenceUser:31] en mapper persistence user tomodelpersistence 
+[2020-05-14 09:35:15] [ INFO ] [MapperPersistenceUser:40] en mapper persistence user todomain 
+[2020-05-14 09:35:53] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 09:35:53] [ INFO ] [MapperPersistenceUser:31] en mapper persistence user tomodelpersistence 
+[2020-05-14 09:35:53] [ INFO ] [MapperPersistenceUser:40] en mapper persistence user todomain 
+[2020-05-14 09:36:23] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin4, password=admin1234, rol=1, enabled=true)
+[2020-05-14 09:36:23] [ INFO ] [MapperPersistenceUser:31] en mapper persistence user tomodelpersistence 
+[2020-05-14 09:36:23] [ INFO ] [MapperPersistenceUser:40] en mapper persistence user todomain 
+[2020-05-14 09:43:13] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 09:43:13] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 09:59:19] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 09:59:20] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 10:22:21] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 10:22:22] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 10:22:22] [ INFO ] [MapperDomainUser:42] mapper domain find authority by id null
+[2020-05-14 10:24:54] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 10:24:54] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 10:24:54] [ INFO ] [MapperDomainUser:42] mapper domain find authority by id null
+[2020-05-14 10:30:33] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 10:30:33] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 10:30:33] [ INFO ] [MapperDomainUser:42] mapper domain find authority by id 2
+[2020-05-14 10:38:20] [ INFO ] [CreateUserService:28] en create user CreateUserCommand(username=admin2, password=admin1234, rol=1, enabled=true)
+[2020-05-14 10:38:20] [ INFO ] [MapperDomainUser:31] mapper domain find authority by id com.example.demo.adapter.out.persistence.model.security.Authority@3c
+[2020-05-14 10:38:20] [ INFO ] [MapperDomainUser:42] mapper domain find authority by id 2

@@ -1,21 +1,21 @@
 package com.example.demo.adapter.out.persistence.model.security;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 
 @Entity
-@Table(name = "USER_", uniqueConstraints = { @UniqueConstraint(columnNames = { "USER_NAME" }) })
+@Table(name = "USER_", uniqueConstraints = {@UniqueConstraint(columnNames = {"USER_NAME"})})
+@Builder
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class User implements UserDetails, Serializable {
     @Id
@@ -62,8 +62,8 @@ public class User implements UserDetails, Serializable {
         return !isCredentialsExpired();
     }
 
-    public void addAuthority(Authority authority){
-        if(this.authorities == null){
+    public void addAuthority(Authority authority) {
+        if (this.authorities == null) {
             this.authorities = new ArrayList();
         }
         this.authorities.add(authority);
