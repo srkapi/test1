@@ -4,6 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * modelo de request
@@ -17,7 +18,7 @@ public class CreateUserCommand implements Serializable {
 
     private String password;
 
-    private Long rol;
+    private List<Long> rol;
 
     private Boolean enabled;
 }

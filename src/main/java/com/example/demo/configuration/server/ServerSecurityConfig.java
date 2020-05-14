@@ -41,6 +41,6 @@ public class ServerSecurityConfig  extends WebSecurityConfigurerAdapter {
     }
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/user/**").antMatchers("/h2-console/**");
+        web.ignoring().antMatchers("/user/**").antMatchers("/h2-console/**").antMatchers("/sendmail/**");
     }
 }

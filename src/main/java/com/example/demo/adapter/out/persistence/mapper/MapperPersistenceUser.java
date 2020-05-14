@@ -26,11 +26,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MapperPersistenceUser {
     final static Logger logger = Logger.getLogger(MapperPersistenceUser.class);
-    private final AuthorityRepository authorityRepository;
 
     //pasa de modelo de dominio a modelo de bbdd
     public User toModelPersistence(UserDomain domain) {
-        Collection<Authority> authorities = this.authorityRepository.findAuthorityByIdUser(domain.getId());
 
         return User.builder()
                 .username(domain.getUsername())
