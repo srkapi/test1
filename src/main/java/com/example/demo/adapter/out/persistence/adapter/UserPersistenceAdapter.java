@@ -19,7 +19,7 @@ import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-public class UserPersistenceAdapter implements PersistenceUserPort {
+public class UserPersistenceAdapter implements PersistenceUserPort, FindByIdUserPort,UpdateUserPort {
     final static Logger logger = Logger.getLogger(UserPersistenceAdapter.class);
 
     private final UserRepository userRepository;
@@ -33,6 +33,18 @@ public class UserPersistenceAdapter implements PersistenceUserPort {
         return this.mapperPersistence.toDomain(savedUser);
     }
 
+    @Override
+    public UserDomain findById(Long id){
+        Optional<User> userOptional = this.userRepository.findById(id);
+        User user = userOptional.get();
+        return this.mapperPersistence.toDomain(user);
+    }
 
-
+    @Override
+    public UserDomain update(UserDomain userDomain, Long id){
+        User user = this.mapperPersistence.toModelPersistenceUpdate(userDomain);
+        user.setId(id);
+        User updatedUser = this.userRepository.save(user);
+        return this.mapperPersistence.toDomainUpdate(updatedUser);
+    }
 }

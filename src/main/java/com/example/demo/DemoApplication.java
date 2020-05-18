@@ -8,11 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
 @SpringBootApplication
 @EnableScheduling //habilita el soporte de scheduling y permite usar la notación @scheduled en el conexto de la app
+@EnableAsync
 public class DemoApplication implements CommandLineRunner {
     @Autowired
     private UserRepository userRepository;

@@ -4,19 +4,14 @@ import com.example.demo.adapter.out.persistence.model.security.Authority;
 import lombok.Builder;
 import lombok.Data;
 
-import java.io.Serializable;
 import java.util.Collection;
 
-/**
- * modelo de response
- * */
 @Builder
 @Data
-public class ResponseCreateUser implements Serializable {
-private Long id;
+public class ResponseFindByIdUser {
+    private Long id;
     private String username;
-
     private String password;
-
+    private Boolean enabled;
     private Collection<Authority> authorities;
 }

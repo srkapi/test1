@@ -1,22 +1,10 @@
 package com.example.demo.adapter.out.persistence.mapper;
 
-import com.example.demo.adapter.in.web.PersonajeController;
-import com.example.demo.adapter.out.persistence.model.KeyModel;
-import com.example.demo.adapter.out.persistence.model.PersonajeModel;
-import com.example.demo.adapter.out.persistence.model.security.Authority;
 import com.example.demo.adapter.out.persistence.model.security.User;
-import com.example.demo.adapter.out.persistence.repository.AuthorityRepository;
-import com.example.demo.adapter.out.persistence.repository.KeyRepository;
-import com.example.demo.application.domain.Key;
-import com.example.demo.application.domain.Personaje;
 import com.example.demo.application.domain.UserDomain;
 import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 
 
 /**
@@ -29,12 +17,16 @@ public class MapperPersistenceUser {
 
     //pasa de modelo de dominio a modelo de bbdd
     public User toModelPersistence(UserDomain domain) {
-
         return User.builder()
                 .username(domain.getUsername())
                 .password(domain.getPassword())
-                .enabled(domain.getEnabled())
                 .authorities(domain.getAuthorities())
+                .build();
+    }
+    public User toModelPersistenceUpdate(UserDomain domain) {
+        return User.builder()
+                .password(domain.getPassword())
+                .enabled(true)
                 .build();
     }
 
@@ -45,9 +37,17 @@ public class MapperPersistenceUser {
                 .id(model.getId())
                 .username(model.getUsername())
                 .password(model.getPassword())
+                .enabled(model.isEnabled())
                 .authorities(model.getAuthorities())
                 .build();
     }
+    public UserDomain toDomainUpdate(User model) {
 
-
+        return UserDomain.builder()
+                .id(model.getId())
+                .username(model.getUsername())
+                .password(model.getPassword())
+                .enabled(model.isEnabled())
+                .build();
+    }
 }

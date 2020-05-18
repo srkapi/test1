@@ -20,5 +20,4 @@ public class CreateUserCommand implements Serializable {
 
     private List<Long> rol;
 
-    private Boolean enabled;
 }
