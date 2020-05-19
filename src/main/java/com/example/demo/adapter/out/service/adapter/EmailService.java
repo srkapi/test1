@@ -1,16 +1,16 @@
-package com.example.demo.application.service;
+package com.example.demo.adapter.out.service.adapter;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 @Service
-public class EmailServiceImpl {
+public class EmailService {
 
 
     public JavaMailSender emailSender;
 
-    public EmailServiceImpl(JavaMailSender javaMailSender) {
+    public EmailService(JavaMailSender javaMailSender) {
         this.emailSender = javaMailSender;
     }
 

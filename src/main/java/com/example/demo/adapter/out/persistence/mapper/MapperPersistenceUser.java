@@ -26,7 +26,7 @@ public class MapperPersistenceUser {
     public User toModelPersistenceUpdate(UserDomain domain) {
         return User.builder()
                 .password(domain.getPassword())
-                .enabled(true)
+                .enabled(domain.getEnabled())
                 .build();
     }
 

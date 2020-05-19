@@ -1,6 +1,6 @@
 package com.example.demo;
 
-import com.example.demo.application.service.EmailServiceImpl;
+import com.example.demo.adapter.out.service.adapter.EmailService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class SendEmailApplicationTest {
     @Autowired
-    private EmailServiceImpl emailService;
+    private EmailService emailService;
 
     @Test
     public void testEmail() {

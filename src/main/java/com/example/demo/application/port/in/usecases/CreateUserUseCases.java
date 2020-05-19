@@ -5,6 +5,4 @@ import com.example.demo.application.port.in.model.ResponseCreateUser;
 
 public interface CreateUserUseCases {
     ResponseCreateUser addUser(CreateUserCommand createUserCommand);
-
-    void sendMail(ResponseCreateUser responseCreateUser);
 }
