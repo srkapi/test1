@@ -29,7 +29,6 @@ public class MapperDomainUser {
     }
 
     public UserDomain toDomainById(ResponseFindByIdUser responseFindByIdUser) {
-
         return UserDomain.builder()
                 .id(responseFindByIdUser.getId())
                 .username(responseFindByIdUser.getUsername())
@@ -57,6 +56,4 @@ public class MapperDomainUser {
                 .authorities(user.getAuthorities())
                 .build();
     }
-
-
 }

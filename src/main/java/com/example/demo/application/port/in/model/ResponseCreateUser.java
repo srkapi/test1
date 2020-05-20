@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * modelo de response
@@ -18,5 +19,5 @@ private Long id;
 
     private String password;
 
-    private Collection<Authority> authorities;
+    private List<String> authorities;
 }

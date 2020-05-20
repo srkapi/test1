@@ -7,7 +7,6 @@ import com.example.demo.application.port.in.model.ResponseFindByIdUser;
 import com.example.demo.application.port.in.usecases.ActivateUserUseCases;
 import com.example.demo.application.port.in.usecases.FindByIdUserUseCases;
 import com.example.demo.application.port.out.ActivateUserPort;
-import com.example.demo.application.port.out.FindByIdUserPort;
 import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
@@ -26,6 +25,7 @@ public class ActivateUserService implements ActivateUserUseCases {
         UserDomain userDomain = this.mapperDomainUser.toDomainById(responseFindByIdUser);
         userDomain.setEnabled(true);
         UserDomain user = this.activateUserPort.activateUser(userDomain, id);
+
         return this.mapperDomainUser.toResponse(user);
     }
 }

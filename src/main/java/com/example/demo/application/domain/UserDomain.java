@@ -1,13 +1,11 @@
 package com.example.demo.application.domain;
 
-import com.example.demo.adapter.out.persistence.model.security.Authority;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 @Builder
@@ -22,9 +20,10 @@ public class UserDomain {
     private String password;
     private Boolean enabled;
 
-    private Collection<Authority> authorities;
+    //private Collection<Authority> authorities;
+    private List<String> authorities;
 
-    public void addAuthority(Authority authority) {
+    public void addAuthority(String authority) {
         if (this.authorities == null) {
             this.authorities = new ArrayList();
         }

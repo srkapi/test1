@@ -13,9 +13,10 @@ import lombok.RequiredArgsConstructor;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.EntityNotFoundException;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 
 /**
@@ -34,18 +35,11 @@ public class CreateUserService implements CreateUserUseCases {
     @Override
     public ResponseCreateUser addUser(CreateUserCommand createUserCommand) {
         UserDomain userDomain = mapperDomain.toDomain(createUserCommand);
-        List<Long> roles = createUserCommand.getRol();
-        for (Long rol : roles) {
-            Authority authority = this.authorityRepository.findById(rol).orElseThrow(() -> new EntityNotFoundException());
-            userDomain.addAuthority(authority);
-        }
-        UserDomain user = this.persistenceUserPort.save(userDomain);
-        Collection<Authority> authorities = this.authorityRepository.findAuthorityByIdUser(user.getId());
-        user.setAuthorities(authorities);
+
+        UserDomain user = this.persistenceUserPort.save(userDomain, createUserCommand);
+
         this.sendMailVerificationPort.sendMail(user);
         return this.mapperDomain.toResponse(user);
 
     }
-
-
 }

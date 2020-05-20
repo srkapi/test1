@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.Collection;
+import java.util.List;
 
 @Builder
 @Data
@@ -13,5 +14,5 @@ public class ResponseFindByIdUser {
     private String username;
     private String password;
     private Boolean enabled;
-    private Collection<Authority> authorities;
+    private List<String> authorities;
 }
