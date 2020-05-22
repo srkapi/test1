@@ -1,1 +1,1 @@
-Demo OAuth Server
+Demo OAuth Server - Clean Architecture
