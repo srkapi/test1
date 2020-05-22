@@ -1,0 +1,69 @@
+[2020-05-20 12:55:35] [ INFO ] [CreateUserService:41] create user service UserDomain(id=null, username=admin, password=$2a$10$Jkt4a6Ho5nnyht8u2w05je9cxOPUqNs3GL2Vay/3YnpM1X3m6MuW6, enabled=null, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 13:11:34] [ INFO ] [CreateUserService:40] create user service UserDomain(id=null, username=admin, password=$2a$10$nUx1sEaybDckRsssdaU91uUhetMZhgMfwy/s5MIsr06W/kU7eZo8W, enabled=null, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 13:14:47] [ INFO ] [CreateUserService:40] create user service UserDomain(id=null, username=admin, password=$2a$10$qPhthkiyjRcDUPr83FxKKOMhK6Iy2L/GSLV7JunaEqq89l9fjvXjG, enabled=null, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 13:19:49] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=null, password=$2a$10$DGUbZuBwENgtdzzNYRAVR.93PEW0VrrqSXszYQ40fXsM7kOsnd7Cy, enabled=true, authorities=null)
+[2020-05-20 13:30:03] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=null, password=$2a$10$qcaey4zRQPPeW2QxRlp2N.zgYyB7APoy2SmXVYF49zyfoGRPleYE., enabled=true, authorities=null)
+[2020-05-20 13:30:04] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=null, password=$2a$10$qcaey4zRQPPeW2QxRlp2N.zgYyB7APoy2SmXVYF49zyfoGRPleYE., enabled=true, authorities=null)
+[2020-05-20 13:39:05] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=null, password=$2a$10$Oa7Hk98YVFTQTxRt/76kbeVDQ3ihI4vidheRyNlUE5jEkHGfFrdFe, enabled=true, authorities=null)
+[2020-05-20 13:54:06] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=admin, password=$2a$10$M1etHE.dggSPwnUpEjOHZ.Z4w0jRhBlcZbkKI7l5lxMYk5utlpNjm, enabled=true, authorities=null)
+[2020-05-20 14:21:24] [ INFO ] [UserPersistenceAdapter:56] persisence user adapter 1 User(id=null, username=null, password=$2a$10$Vt88dxihjtuxjOK5rFjfNeNK0BLptIGdngeVSjLPw9NdzUEOoITWK, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:21:24] [ INFO ] [UserPersistenceAdapter:59] persisence user adapter 2 User(id=1, username=null, password=$2a$10$Vt88dxihjtuxjOK5rFjfNeNK0BLptIGdngeVSjLPw9NdzUEOoITWK, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:21:24] [ INFO ] [ActivateUserService:29] activate user service UserDomain(id=1, username=admin, password=$2a$10$Vt88dxihjtuxjOK5rFjfNeNK0BLptIGdngeVSjLPw9NdzUEOoITWK, enabled=true, authorities=null)
+[2020-05-20 14:37:56] [ INFO ] [UserPersistenceAdapter:56] persisence user adapter 1 User(id=null, username=null, password=$2a$10$xQ..XUQNJDN0pzlowDHXiO2urn9552SW9YgDP2VyDVczyZY7IAXhW, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:37:56] [ INFO ] [UserPersistenceAdapter:59] persisence user adapter 2 User(id=1, username=null, password=$2a$10$xQ..XUQNJDN0pzlowDHXiO2urn9552SW9YgDP2VyDVczyZY7IAXhW, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:43:30] [ INFO ] [UserPersistenceAdapter:56] persisence user adapter 1 User(id=null, username=null, password=$2a$10$45ROPJqVpc.0g0lNL2ixLuMkoi0nEPWk8woP1NWMdV/RBxAe4AR7u, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:43:30] [ INFO ] [UserPersistenceAdapter:59] persisence user adapter 2 User(id=1, username=null, password=$2a$10$45ROPJqVpc.0g0lNL2ixLuMkoi0nEPWk8woP1NWMdV/RBxAe4AR7u, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:46:11] [ INFO ] [UserPersistenceAdapter:56] persisence user adapter 1 User(id=null, username=null, password=$2a$10$9hELqIVf/gtoj39ODeiBZuJSpKYxufJ012rVxXV2hfEhcXniFozLG, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:46:11] [ INFO ] [UserPersistenceAdapter:59] persisence user adapter 2 User(id=1, username=null, password=$2a$10$9hELqIVf/gtoj39ODeiBZuJSpKYxufJ012rVxXV2hfEhcXniFozLG, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:46:11] [ INFO ] [MapperPersistenceUser:63] aqui
+[2020-05-20 14:48:46] [ INFO ] [UserPersistenceAdapter:56] persisence user adapter 1 User(id=null, username=null, password=$2a$10$KaZwsuo8pyx8hipR34xWTOzxrMFUXRPdo9iaexLuE0dlhKJE6G.Ye, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:48:46] [ INFO ] [UserPersistenceAdapter:59] persisence user adapter 2 User(id=1, username=null, password=$2a$10$KaZwsuo8pyx8hipR34xWTOzxrMFUXRPdo9iaexLuE0dlhKJE6G.Ye, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=true, authorities=null)
+[2020-05-20 14:48:46] [ INFO ] [MapperPersistenceUser:63] authoritiesCollection null
+[2020-05-20 14:48:46] [ INFO ] [MapperPersistenceUser:65] authoritiesStrings []
+[2020-05-20 15:06:42] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$/7cveUbI3EDC6j17VkYozOFUJVK2j5hc/YZzFXBzXBRfCxsydlZz2, enabled=true, authorities=null)
+[2020-05-20 15:08:41] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$b9i44yZR7TCgkNhtimIXRuwxzUp2yr/6iaP5C2zzS/r/Y4y5VfYta, enabled=true, authorities=null)
+[2020-05-20 15:08:41] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$b9i44yZR7TCgkNhtimIXRuwxzUp2yr/6iaP5C2zzS/r/Y4y5VfYta, enabled=true, authorities=null)
+[2020-05-20 15:09:56] [ INFO ] [ActivateUserService:26] activate user service ResponseFindByIdUser(id=1, username=admin, password=$2a$10$ga9MOZtjMHL9Atf2z287P.8remFglS2ydrtc79Qo7YMz/kv6UAOQy, enabled=false, authorities=null)
+[2020-05-20 15:09:56] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$ga9MOZtjMHL9Atf2z287P.8remFglS2ydrtc79Qo7YMz/kv6UAOQy, enabled=false, authorities=null)
+[2020-05-20 15:09:56] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$ga9MOZtjMHL9Atf2z287P.8remFglS2ydrtc79Qo7YMz/kv6UAOQy, enabled=true, authorities=null)
+[2020-05-20 15:11:40] [ INFO ] [ActivateUserService:26] activate user service ResponseFindByIdUser(id=1, username=admin, password=$2a$10$.qwM401dYpPwIwvjRLsurOvXy/ApXmk9imUxAEIUVuk6SNO.mZt3y, enabled=false, authorities=null)
+[2020-05-20 15:11:40] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$.qwM401dYpPwIwvjRLsurOvXy/ApXmk9imUxAEIUVuk6SNO.mZt3y, enabled=false, authorities=null)
+[2020-05-20 15:11:40] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$.qwM401dYpPwIwvjRLsurOvXy/ApXmk9imUxAEIUVuk6SNO.mZt3y, enabled=true, authorities=null)
+[2020-05-20 15:51:19] [ INFO ] [MapperPersistenceUser:54] authoritiesCollection [com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d]
+[2020-05-20 15:51:19] [ INFO ] [MapperPersistenceUser:56] authoritiesStrings []
+[2020-05-20 15:51:19] [ INFO ] [MapperPersistenceUser:59] aqui [PERSONAJE_CREATE]
+[2020-05-20 15:51:19] [ INFO ] [MapperPersistenceUser:59] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:51:19] [ INFO ] [MapperPersistenceUser:61] todomain activate [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:51:19] [ INFO ] [ActivateUserService:26] activate user service ResponseFindByIdUser(id=1, username=admin, password=$2a$10$nCYv3QSzx0PSl0LtAOqPaevlR/UpfkdrAbOuPEQqp7UDVUfpKFuMW, enabled=false, authorities=null)
+[2020-05-20 15:51:19] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$nCYv3QSzx0PSl0LtAOqPaevlR/UpfkdrAbOuPEQqp7UDVUfpKFuMW, enabled=false, authorities=null)
+[2020-05-20 15:51:19] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$nCYv3QSzx0PSl0LtAOqPaevlR/UpfkdrAbOuPEQqp7UDVUfpKFuMW, enabled=true, authorities=null)
+[2020-05-20 15:53:29] [ INFO ] [MapperPersistenceUser:43] authoritiesCollection [com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d]
+[2020-05-20 15:53:29] [ INFO ] [MapperPersistenceUser:45] authoritiesStrings []
+[2020-05-20 15:53:29] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE]
+[2020-05-20 15:53:29] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:29] [ INFO ] [MapperPersistenceUser:50] todomain activate [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:43] authoritiesCollection [com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:45] authoritiesStrings []
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:50] todomain activate [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [ActivateUserService:26] activate user service ResponseFindByIdUser(id=1, username=admin, password=$2a$10$97KkECOe7IIWTYhEJAyE2.0v4FnF9pDGesZrknA7d23XHMqm76Fwm, enabled=false, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 15:53:33] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$97KkECOe7IIWTYhEJAyE2.0v4FnF9pDGesZrknA7d23XHMqm76Fwm, enabled=false, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 15:53:33] [ INFO ] [UserPersistenceAdapter:55] aqui userDomain UserDomain(id=1, username=admin, password=$2a$10$97KkECOe7IIWTYhEJAyE2.0v4FnF9pDGesZrknA7d23XHMqm76Fwm, enabled=true, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 15:53:33] [ INFO ] [UserPersistenceAdapter:62] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [UserPersistenceAdapter:62] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [UserPersistenceAdapter:66] persisence user adapter 1 User(id=null, username=admin, password=$2a$10$97KkECOe7IIWTYhEJAyE2.0v4FnF9pDGesZrknA7d23XHMqm76Fwm, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=false, authorities=[com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d])
+[2020-05-20 15:53:33] [ INFO ] [UserPersistenceAdapter:69] persisence user adapter 2 User(id=1, username=admin, password=$2a$10$97KkECOe7IIWTYhEJAyE2.0v4FnF9pDGesZrknA7d23XHMqm76Fwm, accountExpired=false, accountLocked=false, credentialsExpired=false, enabled=false, authorities=[com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d])
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:43] authoritiesCollection [com.example.demo.adapter.out.persistence.model.security.Authority@3c, com.example.demo.adapter.out.persistence.model.security.Authority@3d]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:45] authoritiesStrings []
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:48] aqui [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 15:53:33] [ INFO ] [MapperPersistenceUser:50] todomain activate [PERSONAJE_CREATE, PERSONAJE_READ]
+[2020-05-20 16:02:52] [ INFO ] [MapperPersistenceUser:25] mapper user persistence UserDomain(id=null, username=admin, password=$2a$10$wvgErvxQDS7Ue9Bbiv1yKOXYBcDjodi656ELh1gzxT6a6Zby5jOIG, enabled=null, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:02:58] [ INFO ] [MapperDomainUser:32] mapper user domain ResponseFindByIdUser(id=1, username=admin, password=$2a$10$wvgErvxQDS7Ue9Bbiv1yKOXYBcDjodi656ELh1gzxT6a6Zby5jOIG, enabled=false, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:02:58] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$wvgErvxQDS7Ue9Bbiv1yKOXYBcDjodi656ELh1gzxT6a6Zby5jOIG, enabled=true, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:02:58] [ INFO ] [MapperPersistenceUser:25] mapper user persistence UserDomain(id=1, username=admin, password=$2a$10$wvgErvxQDS7Ue9Bbiv1yKOXYBcDjodi656ELh1gzxT6a6Zby5jOIG, enabled=true, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:04:58] [ INFO ] [MapperPersistenceUser:25] mapper user persistence UserDomain(id=null, username=admin, password=$2a$10$Ltw2VJ9Uri9tAy60JP6Zw.8CifBvnfG36esWS4HxhuHuw0XXfzPke, enabled=null, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:06:28] [ INFO ] [MapperDomainUser:32] mapper user domain ResponseFindByIdUser(id=1, username=admin, password=$2a$10$mvqw.Y3X4gWqlsskwvA.PukSxRuDozVib8DxLo.Vh8HGzMwcZA03., enabled=false, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:06:28] [ INFO ] [ActivateUserService:28] activate user service UserDomain(id=1, username=admin, password=$2a$10$mvqw.Y3X4gWqlsskwvA.PukSxRuDozVib8DxLo.Vh8HGzMwcZA03., enabled=true, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
+[2020-05-20 16:06:28] [ INFO ] [MapperPersistenceUser:33] mapper user persistence UserDomain(id=1, username=admin, password=$2a$10$mvqw.Y3X4gWqlsskwvA.PukSxRuDozVib8DxLo.Vh8HGzMwcZA03., enabled=true, authorities=[PERSONAJE_CREATE, PERSONAJE_READ])
