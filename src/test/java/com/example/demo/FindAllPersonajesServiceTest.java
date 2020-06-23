@@ -45,7 +45,7 @@ public class FindAllPersonajesServiceTest {
         //then
         assertNotNull(serviceResponse);
         assertEquals(responseFindAllPersonajes, serviceResponse);
-        verify(findAllPersonajesPort,times(1)).findAllPersonajes();
+        verify(findAllPersonajesPort, times(1)).findAllPersonajes();
     }
 
 }

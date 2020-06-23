@@ -1,4 +1,0 @@
-hello world
-first line
-new change on task2
-third line

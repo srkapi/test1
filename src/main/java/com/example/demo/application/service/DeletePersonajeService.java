@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @RequiredArgsConstructor
 public class DeletePersonajeService implements DeletePersonajeUseCases {
-        private final DeletePersonajePort deletePersonajePort;
+    private final DeletePersonajePort deletePersonajePort;
 
     @Override
     @Transactional

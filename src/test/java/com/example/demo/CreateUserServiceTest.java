@@ -15,8 +15,6 @@ import org.mockito.Mock;
 import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import javax.xml.ws.Response;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.mockito.Mockito.*;
@@ -41,9 +39,9 @@ public class CreateUserServiceTest {
         //given
         UserDomain userDomain = mock(UserDomain.class);
         CreateUserCommand createUserCommand = mock(CreateUserCommand.class);
-        ResponseCreateUser responseCreateUser=mock(ResponseCreateUser.class);
+        ResponseCreateUser responseCreateUser = mock(ResponseCreateUser.class);
         doReturn(userDomain).when(mapperDomain).toDomain(createUserCommand);
-        doReturn(userDomain).when(persistenceUserPort).save(userDomain,createUserCommand);
+        doReturn(userDomain).when(persistenceUserPort).save(userDomain, createUserCommand);
         doNothing().when(sendMailVerificationPort).sendMail(userDomain);
         doReturn(responseCreateUser).when(mapperDomain).toResponse(userDomain);
         //when
